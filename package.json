@@ -1,0 +1,36 @@
+{
+  "name": "ibeer-web",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tangelodev/ibeer-web"
+  },
+  "version": "0.0.1",
+  "scripts": {
+    "install": "napa",
+    "build": "grunt build",
+    "start": "grunt"
+  },
+  "napa": {
+    "angular": "angular/bower-angular",
+    "ui-router": "angular-ui/ui-router"
+  },
+  "authors": [
+    "Claudio Eduardo de Oliveira <claudioed.oliveira@gmail.com>",
+    "Tiago Angelo <tangelodev@gmail.com>"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^4.0.1",
+    "grunt-contrib-connect": "^0.11.2",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^3.3.0",
+    "napa": "^2.0.2"
+  },
+  "browser": {
+    "angular": "./app/js/libs/angular/angular-index.js",
+    "ui-router": "./app/js/libs/ui-router/ui-router-index.js"
+  }
+}
