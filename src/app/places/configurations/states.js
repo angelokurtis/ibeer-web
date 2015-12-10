@@ -6,7 +6,7 @@ module.exports = function ($stateProvider, $urlRouterProvider) {
 
     $stateProvider.state('root', {
         url: '/',
-        templateUrl: 'partials/places/places-list.html',
-        controller: 'PlacesController'
+        templateUrl: './app/places/views/list.html',
+        controller: 'PlacesListController'
     });
 };

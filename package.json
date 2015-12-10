@@ -11,16 +11,15 @@
     "build": "grunt build",
     "start": "grunt"
   },
-  "napa": {
-    "angular": "angular/bower-angular",
-    "ui-router": "angular-ui/ui-router"
-  },
+  "napa": {},
   "authors": [
     "Claudio Eduardo de Oliveira <claudioed.oliveira@gmail.com>",
     "Tiago Angelo <tangelodev@gmail.com>"
   ],
   "license": "ISC",
   "devDependencies": {
+    "angular": "^1.4.8",
+    "angular-ui-router": "^0.2.15",
     "grunt": "^0.4.5",
     "grunt-browserify": "^4.0.1",
     "grunt-contrib-connect": "^0.11.2",
@@ -30,7 +29,7 @@
     "napa": "^2.0.2"
   },
   "browser": {
-    "angular": "./app/js/libs/angular/angular-index.js",
-    "ui-router": "./app/js/libs/ui-router/ui-router-index.js"
+    "angular": "./src/assets/libs/angular",
+    "ui-router": "./src/assets/libs/ui-router"
   }
 }

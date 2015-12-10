@@ -6,8 +6,9 @@ angular
     .module('ibeerApp', [
         require('ui-router')
     ])
-    .config(require('./configurations/states'))
-    .controller('PlacesController', require('./controllers/places-controller.js'));
+    .constant('VERSION', require('../../package.json').version);
+
+require('./places');
 
 angular
     .element(document)

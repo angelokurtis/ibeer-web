@@ -5,14 +5,17 @@ module.exports = function (grunt) {
     grunt.initConfig({
         browserify: {
             js: {
-                src: 'app/js/app.js',
-                dest: 'dist/js/app.js'
+                src: 'src/app/app.js',
+                dest: 'dist/app/app.js',
+                options: {
+                    debug: true
+                }
             }
         },
         copy: {
             all: {
                 expand: true,
-                cwd: 'app/',
+                cwd: 'src/',
                 src: ['**/*.html', '**/*.css', '**/*.png', '**/*.jpeg', 'plugins/**/*'],
                 dest: 'dist/'
             }
@@ -22,11 +25,11 @@ module.exports = function (grunt) {
                 livereload: true
             },
             js: {
-                files: 'app/js/**/*.js',
+                files: 'src/app/**/*.js',
                 tasks: ['browserify', 'copy']
             },
             html: {
-                files: 'app/**/*.html',
+                files: 'src/**/*.html',
                 tasks: 'copy'
             }
         },
